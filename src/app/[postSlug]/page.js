@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export async function generateStaticPaths() {
+export async function getStaticPaths() {
   const slugs = SLUGS;
   const paths = slugs.map((slug) => ({
     params: { postSlug: slug },
